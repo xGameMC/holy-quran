@@ -32,13 +32,6 @@ client.user.setGame(`quran alkream`,"")
 
 
 
-client.on('message', message => {
-    if (message.content === 'ping') {
-    	message.reply('pong');
-  	}
-});
-
-
 
 
 client.on("message", message => {
@@ -166,7 +159,7 @@ ${videos.map(video2 => `[**${++index} **] \`${video2.title}\``).join('\n')}`)
 		const embedNP = new Discord.RichEmbed()
 	.setDescription(`:notes: الان يتم تشغيل : **${serverQueue.songs[0].title}**`)
 		return msg.channel.sendEmbed(embedNP);
-	} else if (command === `قائمه`) {
+	} else if (command === `القائمه`) {
 		//by ,$ ReBeL ء , 🔕#4777 'CODES SERVER'
 		if (!serverQueue) return msg.channel.send('لا يوجد شيء حالي ف العمل.');
 		let index = 0;
